@@ -1,0 +1,21 @@
+
+description = 'Axon Bank - Web'
+dependencies {
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version:'1.5.2.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version:'1.5.2.RELEASE'
+    compile group: 'io.projectreactor', name: 'reactor-net', version:'2.0.8.RELEASE'
+    compile group: 'io.netty', name: 'netty-all', version:'4.1.6.Final'
+    compile group: 'org.webjars', name: 'angularjs', version:'1.4.8'
+    compile group: 'org.webjars', name: 'angular-ui-bootstrap', version:'2.2.0'
+    compile group: 'org.webjars', name: 'bootstrap', version:'3.3.7-1'
+    compile group: 'org.webjars', name: 'webjars-locator', version:'0.30'
+    compile group: 'org.webjars', name: 'bootswatch-cosmo', version:'3.3.5+4'
+    compile group: 'org.webjars.bower', name: 'ng-stomp', version:'0.3.0'
+    compile group: 'com.thoughtworks.xstream', name: 'xstream', version:'1.4.9'
+  compile project(':axon-bank-core-api')
+  compile project(':axon-bank-core')
+  compile project(':axon-bank-query')
+}

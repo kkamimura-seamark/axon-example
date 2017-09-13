@@ -1,0 +1,10 @@
+rootProject.name = 'axon-bank'
+include ':axon-bank-core'
+include ':axon-bank-core-api'
+include ':axon-bank-query'
+include ':axon-bank-web'
+
+project(':axon-bank-core').projectDir = "$rootDir/core" as File
+project(':axon-bank-core-api').projectDir = "$rootDir/core-api" as File
+project(':axon-bank-query').projectDir = "$rootDir/query" as File
+project(':axon-bank-web').projectDir = "$rootDir/web" as File

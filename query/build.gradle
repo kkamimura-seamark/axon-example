@@ -1,0 +1,8 @@
+
+description = 'Axon Bank - Query'
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version:'1.5.2.RELEASE'
+    compile group: 'org.projectlombok', name: 'lombok', version:'1.16.14'
+    compile group: 'org.springframework', name: 'spring-messaging', version:'4.3.7.RELEASE'
+  compile project(':axon-bank-core-api')
+}

@@ -1,0 +1,5 @@
+
+description = 'Axon Bank - Core'
+dependencies {
+  compile project(':axon-bank-core-api')
+}
